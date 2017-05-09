@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,10 +9,101 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Escoge un método"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btnGauss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="67dp"
+        android:onClick="irAGauss"
+        android:text="gauss"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnGaussJordan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="irAGaussJordan"
+        android:text="Gauss Jordan"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/btnGauss"
+        android:layout_alignBottom="@+id/btnGauss"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnCramer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="irACramer"
+        android:text="Cramer"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/btnInversa"
+        android:layout_alignBottom="@+id/btnInversa"
+        android:layout_alignLeft="@+id/btnGauss"
+        android:layout_alignStart="@+id/btnGauss" />
+
+    <Button
+        android:id="@+id/btnInversa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="irAMatrizInversa"
+        android:text="Matriz inversa"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnGaussJordan"
+        android:layout_alignStart="@+id/btnGaussJordan" />
+
+    <Button
+        android:id="@+id/btnQuinto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El QUinto"
+        android:textSize="18sp"
+        android:layout_below="@+id/btnInversa"
+        android:layout_alignLeft="@+id/btnCramer"
+        android:layout_alignStart="@+id/btnCramer"
+        android:layout_marginTop="79dp" />
+
+    <Button
+        android:id="@+id/btnSexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El sexto"
+        android:textSize="18sp"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignBaseline="@+id/btnQuinto"
+        android:layout_alignBottom="@+id/btnQuinto"
+        android:layout_alignRight="@+id/btnGaussJordan"
+        android:layout_alignEnd="@+id/btnGaussJordan" />
+
+    <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="76dp"
+
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
