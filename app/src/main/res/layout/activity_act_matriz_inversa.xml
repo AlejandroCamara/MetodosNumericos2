@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mx.itesm.acmjscb.metodosnumericos.ActGauss">
+    tools:context="mx.itesm.acmjscb.metodosnumericos.ActMatrizInversa">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Método de Gauss"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="121dp"
+        android:text="Método de la Matriz Inversa"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="105dp"
         tools:layout_editor_absoluteY="16dp" />
 </android.support.constraint.ConstraintLayout>

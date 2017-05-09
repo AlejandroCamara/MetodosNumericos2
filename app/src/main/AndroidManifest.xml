@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActGauss" />
-        <activity android:name=".ActGaussJordan"></activity>
+        <activity android:name=".ActGaussJordan" />
+        <activity android:name=".ActCramer" />
+        <activity android:name=".ActMatrizInversa"></activity>
     </application>
 
 </manifest>

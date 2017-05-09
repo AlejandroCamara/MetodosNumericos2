@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mx.itesm.acmjscb.metodosnumericos.ActGauss">
+    tools:context="mx.itesm.acmjscb.metodosnumericos.ActCramer">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Método de Gauss"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:text="Método de Cramer"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="30dp" />
 </android.support.constraint.ConstraintLayout>

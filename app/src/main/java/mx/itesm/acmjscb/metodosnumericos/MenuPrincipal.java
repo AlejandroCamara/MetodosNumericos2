@@ -38,17 +38,17 @@ public class MenuPrincipal extends AppCompatActivity {
         //Intent intent = new Intent(this,Gauss.class);
         Toast toast = Toast.makeText(this,"Voy a ir a cramer", Toast.LENGTH_LONG);
         toast.show();
-        Intent intent = new Intent(this,ActGauss.class);
+        Intent intent = new Intent(this,ActCramer.class);
         startActivity(intent);
 
     }
 
     public void irAMatrizInversa(View view){
-        //Toast toast = Toast.makeText(this,"Voy a ir a matriz inversa", Toast.LENGTH_LONG);
-        //toast.show();
+        Toast toast = Toast.makeText(this,"Voy a ir a matriz inversa", Toast.LENGTH_LONG);
+        toast.show();
         //Intent intent = new Intent(this,ActGauss.class);
         //startActivity(intent);
-        Intent intent = new Intent(this,ActGauss.class);
+        Intent intent = new Intent(this,ActMatrizInversa.class);
         startActivity(intent);
 
     }
